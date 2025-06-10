@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="outputText"></p>
+
+    <script>
+        var text1 = "10";
+        var text2 = "5";
+
+        var num1 = stringToNumber(text1); // Convert string to number
+        var num2 = stringToNumber(text2); // Convert string to number
+
+        if (isNaN(num1) || isNaN(num2)) {
+            document.getElementById("outputText").innerHTML = "You have not entered a valid number.";
+        } else {
+            document.getElementById("outputText").innerHTML = num1 + num2; // Concatenation of strings
+        }
+
+        function stringToNumber(text) {
+            return parseInt(text);
+        }
+
+    </script>
+</body>
+</html>

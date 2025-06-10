@@ -1,0 +1,104 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f0f4fd 0%, #b7caff 100%);
+}
+
+.login-container {
+    background: #fff;
+    padding: 2.5rem 2.2rem 2rem 2.2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-container h2 {
+    margin-bottom: 2rem;
+    color: #2d3a60;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 1.3rem;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 1rem 1.1rem;
+    border: 1.5px solid #e3e7f1;
+    border-radius: 0.9rem;
+    font-size: 1.08rem;
+    outline: none;
+    background: #f6f8fc;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+}
+
+.input-group input:focus {
+    border-color: #6c63ff;
+    background: #fff;
+    box-shadow: 0 0 0 2px #e0e7ff;
+}
+
+.password-group {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    user-select: none;
+    transition: color 0.2s;
+}
+
+.toggle-password.active {
+    color: #6c63ff;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(90deg, #6c63ff 0%, #48c6ef 100%);
+    color: #fff;
+    border: none;
+    border-radius: 0.9rem;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 8px rgba(76, 110, 245, 0.08);
+    letter-spacing: 0.5px;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(90deg, #48c6ef 0%, #6c63ff 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.error-msg {
+    color: #e53e3e;
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    min-height: 1.2em;
+    text-align: center;
+    font-weight: 500;
+}
