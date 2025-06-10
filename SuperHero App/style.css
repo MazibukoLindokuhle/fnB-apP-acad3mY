@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+h1 {
+    color: #eeff00;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #212121;
+    width: 400px;
+    /* margin: 0 auto; */
+    margin-top: 35px;
+}
+
+h2 {
+
+    font-family: Impact, fantasy;
+    text-align: center;
+    font-size: 30px;
+    color: #eeff00;
+    font-style: italic;
+}
+
+h5 {
+    font-family: Impact, fantasy;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+}
+
+h4 {
+    font-family: Impact, fantasy;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(255, 0, 0);
+}
+
+p {
+    color: #eeff00;
+}
+p .head-ing {
+    color: rgb(15, 0, 152);
+}
+
+.intro {
+    color: rgb(255, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
